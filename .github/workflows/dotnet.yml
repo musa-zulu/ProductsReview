@@ -21,8 +21,8 @@ jobs:
       with:
         dotnet-version: 9.0.x
     - name: Restore dependencies
-      run: dotnet restore ./src/
+      run: dotnet restore ../src/ProductsReview.sln
     - name: Build
-      run: dotnet build ./scr/ --no-restore
+      run: dotnet build ../src/ProductsReview.sln --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal   
