@@ -1,7 +1,7 @@
 # Products review
 
 ## Infrastructure as Code
-
+If you don't want to deploy using a workflow but deploy via cli
 ### Download Azure CLI
 https://learn.microsoft.com/en-us/cli/azure/
 
