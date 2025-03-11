@@ -32,3 +32,6 @@ az ad sp create-for-rbac --name "GitHub-Actions-SP" \
                          --scopes /subscriptions/yoursubscriptionidgoeshere \
                          --sdk-auth
 ```
+
+#### Configure a federated identity credential on an app
+
