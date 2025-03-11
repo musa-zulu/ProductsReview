@@ -27,7 +27,7 @@ az deployment group what-if --resource-group productsreview-dev --template-file 
 #### Create User for GH Actions
 
 ```bash
-az ad sp create-for-rbac --name "GitHub-Actions-SP"
+az ad sp create-for-rbac --name "GitHub-Actions-SP" \
                          --role contributor \
                          --scopes /subscriptions/yoursubscriptionidgoeshere \
                          --sdk-auth
