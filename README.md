@@ -21,3 +21,14 @@ az group create --name productsreview-dev --location southafricanorth
 ```bash
 az deployment group what-if --resource-group productsreview-dev --template-file infrastructure/main.bicep
 ```
+
+
+### Deployment pipeline
+#### Create User for GH Actions
+
+```bash
+az ad sp create-for-rbac --name "GitHub-Actions-SP"
+                         --role contributor \
+                         --scopes /subscriptions/yoursubscriptionidgoeshere \
+                         --sdk-auth
+```
