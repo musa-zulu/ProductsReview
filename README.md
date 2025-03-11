@@ -27,8 +27,19 @@ az deployment group what-if --resource-group productsreview-dev --template-file 
 #### Create User for GH Actions
 
 ```bash
-az ad sp create-for-rbac --name "GitHub-Actions-SP"
+az ad sp create-for-rbac --name "GitHub-Actions-SP" \
                          --role contributor \
                          --scopes /subscriptions/yoursubscriptionidgoeshere \
                          --sdk-auth
 ```
+
+#### Configure a federated identity credential on an app
+https://learn.microsoft.com/en-gb/entra/workload-id/workload-identity-federation-create-trust?pivots=identity-wif-apps-methods-azp#configure-a-federated-identity-credential-on-an-app
+
+## Get Azure Publish Profile
+
+```bash
+az webapp deployment list-publishing-profiles --name api-anme-from-azure --resource-group products-review-dev --xml
+```
+
+
