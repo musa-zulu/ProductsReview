@@ -39,7 +39,7 @@ https://learn.microsoft.com/en-gb/entra/workload-id/workload-identity-federation
 ## Get Azure Publish Profile
 
 ```bash
-az webapp deployment list-publishing-profiles --name api-anme-from-azure --resource-group products-review-dev --xml
+az webapp deployment list-publishing-profiles --name api-name-from-azure(e.g api-sggrppqzz3oqg) --resource-group products-review-dev --xml
 ```
 
 
